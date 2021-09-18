@@ -33,57 +33,63 @@
      </header>
 
      <main>
-         <div class="content">
-             <h1>Project Idea</h1>
-             <h2>Overview</h2>
-             <p>In this paper, I’d like to explore the possibility of creating a program automatic-generates indexing tree that extracts the information from educational interactive video recordings containing documents, narrations, chat box text etc. (e.g., an university lectorial replays) and links the index to its corresponding timestamp of the video. This would help learners capitalise the learning materials and significantly reduce the content searching time in such type of videos.</p>
+          <div class="mainM">
+                 <div class="content">
+                     <h1>Project Idea</h1>
+                     <h2>Overview</h2>
+                     <p>In this paper, I’d like to explore the possibility of creating a program automatic-generates indexing tree that extracts the information from educational interactive video recordings containing documents, narrations, chat box text etc. (e.g., an university lectorial replays) and links the index to its corresponding timestamp of the video. This would help learners capitalise the learning materials and significantly reduce the content searching time in such type of videos.</p>
 
-             <h2>Motivation </h2>
-             <p>Nowadays, auto-generated transcripts and captions from videos is no longer a new subject. YouTube website had its all videos featuring auto-captions in multi-languages. There are several products (i.e., Microsoft Stream, IBM Watson, Trint et al) already in the market either being paid or free offering the auto scripting service. However, it remains questionable that this is the ultimate tool to the video to text conversion. With the online education being increasingly popular and ubiquitous, interactive video technology has been widely embraced by the higher education sector. Karampelas, K. (2020) stated that almost all universities shifted their teaching platform to virtual classrooms due to the Covid pandemic. This remarkable shift manifests a new demand for content searching specialised in dialogic video collections, in which the contents are sourced from diverse embedded programs. Furthermore, another motivation to this project is sparked by my personal experience. When I’m studying an online course at RMIT University on Canvas platform, I’ve encountered a challenge that frustrated me a lot. When I was watching a lectorial recording, I found it very difficult to locate the time frames that contains a particular bulletin point I missed or a piece of useful comments my in-class peers made from the chat box. It took the amount of time more than I thought it would be to get the information I need. Could there be an index directory affixed every recording? I know it would be a tedious repetition job and robs a sheer amount of time from the video authors to make an index for each recording. Though modern computational programming could illuminate a viable solution to this problem.</p>
+                     <h2>Motivation </h2>
+                     <p>Nowadays, auto-generated transcripts and captions from videos is no longer a new subject. YouTube website had its all videos featuring auto-captions in multi-languages. There are several products (i.e., Microsoft Stream, IBM Watson, Trint et al) already in the market either being paid or free offering the auto scripting service. However, it remains questionable that this is the ultimate tool to the video to text conversion. With the online education being increasingly popular and ubiquitous, interactive video technology has been widely embraced by the higher education sector. Karampelas, K. (2020) stated that almost all universities shifted their teaching platform to virtual classrooms due to the Covid pandemic. This remarkable shift manifests a new demand for content searching specialised in dialogic video collections, in which the contents are sourced from diverse embedded programs. Furthermore, another motivation to this project is sparked by my personal experience. When I’m studying an online course at RMIT University on Canvas platform, I’ve encountered a challenge that frustrated me a lot. When I was watching a lectorial recording, I found it very difficult to locate the time frames that contains a particular bulletin point I missed or a piece of useful comments my in-class peers made from the chat box. It took the amount of time more than I thought it would be to get the information I need. Could there be an index directory affixed every recording? I know it would be a tedious repetition job and robs a sheer amount of time from the video authors to make an index for each recording. Though modern computational programming could illuminate a viable solution to this problem.</p>
 
-             <h2>Description</h2>
-             <p> The purpose of this project is to build an application that functions to extract all the contents from interactive videos and auto-generates index directories that help viewers navigate through the recording and locate the information needed explicitly and efficiently. It consolidates the rich and resourceful teaching curriculum from interactive videos into more organised, condensed, accessible materials. Thus, the use of this app. can enhance the students’ distance learning experience. The application has ability to generate three types of indexes according to the source of the contents selected from a video recording and it works like following way.</p>
-             <ul>
-                 <li> For audio contents, the app. firstly auto-pilots through the video, fetches the audio track and translates it into text scripts. Then it sends the scripts to its cloud database for analysing. The next step is to determine what subject this video is related. Then it deploys a subject-matter dictionary to tag out all the possible key words. McGhie, J (n.d.) Called this method as mark-up index and confirmed it usually leads to a highly valid index. Through the study of Microsoft Words Help Tutorial’s topic “create an index”, the algorithm can be simulated here. The app collects the tag entries, arranges them alphabetically, references to the corresponding locations of the timeline in a linear fashion. Last, the index is generated.</li>
-                 <li>Another type of index is to quote the conversational history in the chat box section in a video. To begin with, it extracts the text messages through the timeline of the video. Next, it packs the messages and pushes them to the cloud database for computing. The computing process sifts out not useful words, letters, emojis (i.e., yes, no, Imao, :)) and uses subject-related and human-texting dictionaries to match and highlight key words. The rest of process follows the same manner as audio processing to display an index.</li>
-                 <li>The last type is based on the on-screen text and documents like PowerPoint slides. The concept is to divide the video into several clips in which each one represents an interval of a slide being on display. Subsequently each clip is labelled as the slide’s title. Therefore, the titles of slides can be formed as a table of content for the video. Each slides’ content is abstracted by the application to be posted under the table as subcategories. Lastly a detailed index is formed.</li>
-             </ul>
+                     <h2>Description</h2>
+                     <p> The purpose of this project is to build an application that functions to extract all the contents from interactive videos and auto-generates index directories that help viewers navigate through the recording and locate the information needed explicitly and efficiently. It consolidates the rich and resourceful teaching curriculum from interactive videos into more organised, condensed, accessible materials. Thus, the use of this app. can enhance the students’ distance learning experience. The application has ability to generate three types of indexes according to the source of the contents selected from a video recording and it works like following way.</p>
+                     <ul>
+                         <li> For audio contents, the app. firstly auto-pilots through the video, fetches the audio track and translates it into text scripts. Then it sends the scripts to its cloud database for analysing. The next step is to determine what subject this video is related. Then it deploys a subject-matter dictionary to tag out all the possible key words. McGhie, J (n.d.) Called this method as mark-up index and confirmed it usually leads to a highly valid index. Through the study of Microsoft Words Help Tutorial’s topic “create an index”, the algorithm can be simulated here. The app collects the tag entries, arranges them alphabetically, references to the corresponding locations of the timeline in a linear fashion. Last, the index is generated.</li>
+                         <li>Another type of index is to quote the conversational history in the chat box section in a video. To begin with, it extracts the text messages through the timeline of the video. Next, it packs the messages and pushes them to the cloud database for computing. The computing process sifts out not useful words, letters, emojis (i.e., yes, no, Imao, :)) and uses subject-related and human-texting dictionaries to match and highlight key words. The rest of process follows the same manner as audio processing to display an index.</li>
+                         <li>The last type is based on the on-screen text and documents like PowerPoint slides. The concept is to divide the video into several clips in which each one represents an interval of a slide being on display. Subsequently each clip is labelled as the slide’s title. Therefore, the titles of slides can be formed as a table of content for the video. Each slides’ content is abstracted by the application to be posted under the table as subcategories. Lastly a detailed index is formed.</li>
+                     </ul>
 
-             <h2>Tools, Technologies, skills</h2>
-             <p>The feasibility of this project depends on the scalability and integration of a collection of cutting-edge software and super powerful computational hardware.</p>
-             <ul>
-                 <li>Natural Language Processing (NPL)</li>
-                 <p> In essence, this piece of technology aims to let computers better understand human language and that makes a crucial part of video’s soundtracks decoding. Google BERT applied NPL in its search engine and led a significant improvement on result accuracy (Nayak, P 2019). A Python add-on kit, open-sourced, named Natural Language Toolkit (Bird, S. et al. 2009) shows a more practical pathway for human language manipulation on computers.</p>
-                 <li>Application Program Interface (API)</li>
-                 <p> IBM Cloud Education (2020) explained API allows different applications to communicate with each other by sharing or exchanging data. This project application would deploy a series of API functions to fetch the data from videos.</p>
-                 <li>Hardware requirements</li>
-                 <p>Processing a plethora of video data containing both audio and visuals requires deep machine learning. Singh H. (2019, para. 5) pointed out two possible ways to realise it for a company. One option is to build a GPU/TPUs cluster and do a multi-GPU computing if required funding is allocated. Another option is to look for a cloud service e.g., Sciforce (2019), an online AI hardware provider.</p>
-                 <li>Skills</li>
-                 <p>It’s not a single man task project. It requires collaboration of people from the talent pool possessing both organisational skills and technic skills to germinate this idea. Software development experience is essential for the development team. Budget control and financial planning skill is also required. Solid programming and data analytic skill play a fundamental role in this development.</p>
-             </ul>
+                     <h2>Tools, Technologies, skills</h2>
+                     <p>The feasibility of this project depends on the scalability and integration of a collection of cutting-edge software and super powerful computational hardware.</p>
+                     <ul>
+                         <li>Natural Language Processing (NPL)</li>
+                         <p> In essence, this piece of technology aims to let computers better understand human language and that makes a crucial part of video’s soundtracks decoding. Google BERT applied NPL in its search engine and led a significant improvement on result accuracy (Nayak, P 2019). A Python add-on kit, open-sourced, named Natural Language Toolkit (Bird, S. et al. 2009) shows a more practical pathway for human language manipulation on computers.</p>
+                         <li>Application Program Interface (API)</li>
+                         <p> IBM Cloud Education (2020) explained API allows different applications to communicate with each other by sharing or exchanging data. This project application would deploy a series of API functions to fetch the data from videos.</p>
+                         <li>Hardware requirements</li>
+                         <p>Processing a plethora of video data containing both audio and visuals requires deep machine learning. Singh H. (2019, para. 5) pointed out two possible ways to realise it for a company. One option is to build a GPU/TPUs cluster and do a multi-GPU computing if required funding is allocated. Another option is to look for a cloud service e.g., Sciforce (2019), an online AI hardware provider.</p>
+                         <li>Skills</li>
+                         <p>It’s not a single man task project. It requires collaboration of people from the talent pool possessing both organisational skills and technic skills to germinate this idea. Software development experience is essential for the development team. Budget control and financial planning skill is also required. Solid programming and data analytic skill play a fundamental role in this development.</p>
+                     </ul>
 
-             <h2>Outcome</h2>
-             <p>The realisation of this project deems to be possible at some point in the near future. This app would iron out my problem when reviewing the virtual class recording, and furthermore it will benefit many other areas. For instance, a highly intelligent search engine could be emerged to better sort, achieve, label and inter correlate the vast amount of video data. Cheng et al. (2017) already developed a related software named inVideo to aid US Department of Education to perform video data mining. Another possible usage would be on the video classifications. The app could auto rate the movies/films/documentaries judging on the contents it captured without manual viewing.</p>
+                     <h2>Outcome</h2>
+                     <p>The realisation of this project deems to be possible at some point in the near future. This app would iron out my problem when reviewing the virtual class recording, and furthermore it will benefit many other areas. For instance, a highly intelligent search engine could be emerged to better sort, achieve, label and inter correlate the vast amount of video data. Cheng et al. (2017) already developed a related software named inVideo to aid US Department of Education to perform video data mining. Another possible usage would be on the video classifications. The app could auto rate the movies/films/documentaries judging on the contents it captured without manual viewing.</p>
 
-             <h2>Bibliography</h2>
-             <p> Bird, S., Edward L. & Ewan K. (2009), Natural Language Processing with Python. O’Reilly Media Inc.</p>
-             <p>Cheng, X., Wang P.S., Maher C., Kelly W. 2017, ‘InVideo: An Automatic Video Index and Search Engine for Large Video Collections’, SIGNAL 2017: The Second International Conference on Advances in Signal, Image and Video Processing, p27</p>
-             <p>IBM Cloud Education 2020, ‘Application Programming Interface (API)’, viewed 10 Sep 2021, https://www.ibm.com/cloud/learn/api</p>
-             <p>Karampelas, K. 2020, ‘Videos won’t kill the uni lecture, but they will improve student learning and their marks’, viewed 10 Sep 2021, https://theconversation.com/videos-wont-kill-the-uni-lecture-but-they-will-improve-student-learning-and-their-marks-142282</p>
-             <p>McGhie, J. n.d., ‘How do I generate an index in Word?’, viewed 9 Sep 2021, https://wordmvp.com/FAQs/Formatting/CreateIndex.htm</p>
-             <p>Nayak, P. 2019, ‘Understanding searches better than ever before’, viewed 11 Sep 2021, https://blog.google/products/search/search-language-understanding-bert/</p>
-             <p>Sciforce 2019, ‘AI Hardware and the Battle for More Computational Power’, viewed 11 Sep 2021, https://medium.com/sciforce/ai-hardware-and-the-battle-for-more-computational-power-3272045160a6</p>
-             <p>Singh, H. 2019, ‘Everything you Need to Know About Hardware Requirements for Machine Learning’, viewed 10 Sep 2021, https://www.einfochips.com/blog/everything-you-need-to-know-about-hardware-requirements-for-machine-learning/</p>
-             <p> The University of Melbourne n.d., ‘Auto-generated Transcripts and Captions’, viewed 7 Sep 2021, https://www.unimelb.edu.au/accessibility/video-captioning/auto-generated-transcripts-and-captions</p>
-          </div>
+                     <h2>Bibliography</h2>
+                     <p> Bird, S., Edward L. & Ewan K. (2009), Natural Language Processing with Python. O’Reilly Media Inc.</p>
+                     <p>Cheng, X., Wang P.S., Maher C., Kelly W. 2017, ‘InVideo: An Automatic Video Index and Search Engine for Large Video Collections’, SIGNAL 2017: The Second International Conference on Advances in Signal, Image and Video Processing, p27</p>
+                     <p>IBM Cloud Education 2020, ‘Application Programming Interface (API)’, viewed 10 Sep 2021, https://www.ibm.com/cloud/learn/api</p>
+                     <p>Karampelas, K. 2020, ‘Videos won’t kill the uni lecture, but they will improve student learning and their marks’, viewed 10 Sep 2021, https://theconversation.com/videos-wont-kill-the-uni-lecture-but-they-will-improve-student-learning-and-their-marks-142282</p>
+                     <p>McGhie, J. n.d., ‘How do I generate an index in Word?’, viewed 9 Sep 2021, https://wordmvp.com/FAQs/Formatting/CreateIndex.htm</p>
+                     <p>Nayak, P. 2019, ‘Understanding searches better than ever before’, viewed 11 Sep 2021, https://blog.google/products/search/search-language-understanding-bert/</p>
+                     <p>Sciforce 2019, ‘AI Hardware and the Battle for More Computational Power’, viewed 11 Sep 2021, https://medium.com/sciforce/ai-hardware-and-the-battle-for-more-computational-power-3272045160a6</p>
+                     <p>Singh, H. 2019, ‘Everything you Need to Know About Hardware Requirements for Machine Learning’, viewed 10 Sep 2021, https://www.einfochips.com/blog/everything-you-need-to-know-about-hardware-requirements-for-machine-learning/</p>
+                     <p> The University of Melbourne n.d., ‘Auto-generated Transcripts and Captions’, viewed 7 Sep 2021, https://www.unimelb.edu.au/accessibility/video-captioning/auto-generated-transcripts-and-captions</p>
 
+
+
+                 </div>
+                 
+                 <div class="footer">
+                     <p>Neil Sheelin © copyright 2021</p>
+                     <p>Email: s3923582@student.rmit.edu.au</p>
+                 </div>
+        </div>
 
      </main>
 
-     <div class="footer">
-         <p>Neil Sheelin © copyright 2021</p>
-         <p>Email: s3923582@student.rmit.edu.au</p>
-     </div>
+
 
     </body>
 </html>
